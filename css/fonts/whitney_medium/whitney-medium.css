@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'WhitneyMedium';
+    src: url('whitney-medium.eot');
+    src: url('whitney-medium.eot') format('embedded-opentype'),
+         url('whitney-medium.woff') format('woff'),
+         url('whitney-medium.ttf') format('truetype'),
+         url('whitney-medium.svg#WhitneyMedium') format('svg');
+}
