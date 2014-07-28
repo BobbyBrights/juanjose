@@ -89,6 +89,27 @@ img.grayscale:hover {
   -webkit-filter: grayscale(0%);
 }
 
+/* Bootstrap Affix */
+
+@media (min-width: 992px) {
+
+  #left-nav-fixed.affix-top {
+  position: static;
+  }
+
+  #left-nav-fixed.affix {
+  position: fixed;
+  }
+}
+
+#left-nav-fixed.affix-top {
+	position: static;
+}
+
+#left-nav-fixed.affix {
+	position: fixed;
+	margin-left: -2%;
+}
 
 /* Helper classes */
 

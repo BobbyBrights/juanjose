@@ -5,3 +5,4 @@
 
 #Fields: datetime	priority	category	message
 2014-06-30T21:27:17+00:00	INFO	cookiefailure	Username and password do not match or you do not have an account yet.
+2014-07-24T18:06:04+00:00	INFO	joomlafailure	Username and password do not match or you do not have an account yet.
