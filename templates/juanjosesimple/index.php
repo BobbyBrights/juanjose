@@ -22,8 +22,8 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/fontface.css');
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
     <![endif]-->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-
+    <link rel="icon" type="image/x-icon" href="<?php echo 'templates/' . $this->template . '/images/favicon.ico' ?>" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
     <jdoc:include type="head" />
 
 </head>
@@ -35,12 +35,11 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/fontface.css');
 
         <!-- LEFT BASE COLUMN -->
         <div class="col-sm-3 no-lateral-padding">
-        <div id="left-nav-fixed" data-spy="affix">
           <div class="row logo-row">
-            <div class="col-sm-6 col-sm-offset-4"><img class="main-logo" src="<?php echo 'templates/' . $this->template . '/images/logo_blanco_chico.png' ?>" /></div>
+            <div class="col-sm-6 col-sm-offset-4 no-lateral-padding"><img class="main-logo" src="<?php echo 'templates/' . $this->template . '/images/logo_blanco_chico.png' ?>" /></div>
           </div>
-          <div class="row equal">
-            <div class="col-sm-10">
+          <div class="row">
+            <div class="col-sm-11">
               <div class="row">
                 <div class="col-sm-12">
                   <jdoc:include type="modules" name="menu" style="none" />
@@ -57,7 +56,6 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/fontface.css');
                 </div>
               </div>
             </div>
-            <div class="col-sm-1 menu-border"></div>
           </div>
           <div class="row">
             <div class="col-sm-10 social-logos">
@@ -65,7 +63,6 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/fontface.css');
               <a href="https://www.facebook.com/juanjosemuebles" target="_blank"><img src="<?php echo 'templates/' . $this->template . '/images/facebook.jpg' ?>"></a>
             </div>
           </div>
-        </div>
         </div>
 
         <!-- RIGHT BASE COLUMN -->
@@ -75,37 +72,6 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/fontface.css');
               <jdoc:include type="message" />
               <jdoc:include type="component" />
               <jdoc:include type="modules" name="content" style="none" />
-              <div class="jjarticle">
-                <div class="article-gallery">
-                  <div><img class="main-image" src="images/dummies/1.jpg"></div>
-                  <img class="article-thumbnail" src="images/dummies/1.jpg">
-                  <img class="article-thumbnail grayscale" src="images/dummies/2.jpg">
-                  <img class="article-thumbnail grayscale" src="images/dummies/3.jpg">
-                  <img class="article-thumbnail grayscale" src="images/dummies/4.jpg">
-                  <img class="article-thumbnail grayscale" src="images/dummies/5.jpg">
-                  <img class="article-thumbnail grayscale" src="images/dummies/6.jpg">
-                  <img class="article-thumbnail grayscale" src="images/dummies/7.jpg">
-                  <img class="article-thumbnail grayscale" src="images/dummies/8.jpg">
-                  <img class="article-thumbnail grayscale" src="images/dummies/4.jpg">
-                  <img class="article-thumbnail grayscale" src="images/dummies/5.jpg">
-                  <img class="article-thumbnail grayscale" src="images/dummies/6.jpg">
-                  <img class="article-thumbnail grayscale" src="images/dummies/7.jpg">
-                  <img class="article-thumbnail grayscale" src="images/dummies/8.jpg">
-
-                  <img class="hidden" src="images/dummies/2.jpg">
-                  <img class="hidden" src="images/dummies/3.jpg">
-                  <img class="hidden" src="images/dummies/4.jpg">
-                  <img class="hidden" src="images/dummies/5.jpg">
-                  <img class="hidden" src="images/dummies/6.jpg">
-                  <img class="hidden" src="images/dummies/7.jpg">
-                  <img class="hidden" src="images/dummies/8.jpg">
-                  <img class="hidden" src="images/dummies/4.jpg">
-                  <img class="hidden" src="images/dummies/5.jpg">
-                  <img class="hidden" src="images/dummies/6.jpg">
-                  <img class="hidden" src="images/dummies/7.jpg">
-                  <img class="hidden" src="images/dummies/8.jpg">
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -115,7 +81,6 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/fontface.css');
     </div><!-- /container -->
 
   	</div><!-- #main-wrapper -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
         <script src="<? echo 'templates/' . $this->template . '/js/articlegallery.js'?>" type="text/javascript"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
 </body>

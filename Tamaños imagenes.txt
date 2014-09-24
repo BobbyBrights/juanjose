@@ -1,0 +1,16 @@
+Tamaños imagenes
+
+Medium: se muestran en los articulos especificos (la foto grande). Debe tener 540 pixeles de alto.
+Small: se muestran en las paginas "inicio", "proyectos" y "productos". Deben tener 160 pixeles de alto.
+Thumbnail: se muestran en los articulos específicos (las fotos chicas). Deben tener al menos 70 px de alto.
+
+
+Directorios de las imagenes
+
+images/proyectos/medium
+images/proyectos/small
+images/proyectos/thumbnail
+
+images/productos/medium
+images/productos/small
+images/productos/thumbnail
